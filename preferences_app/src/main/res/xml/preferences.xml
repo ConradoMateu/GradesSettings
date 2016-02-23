@@ -29,7 +29,9 @@
     <PreferenceCategory>
 
         android:title="Cuenta">
-        <Preference
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="example_switch"
             android:summary="asdasd"
             android:title="Sincronizar" />
         <Preference
