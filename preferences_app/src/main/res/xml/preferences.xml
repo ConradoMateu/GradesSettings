@@ -2,38 +2,44 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <PreferenceCategory
-        android:title="Calculanotas">
-        <Preference android:title="Valorar"
-            android:summary="yafunciona"
-            >
+        android:title="Calcula notas">
 
-                <intent android:targetPackage="com.example.testprefs.preferences_app"
-                    android:targetClass="com.example.testprefs.preferences_app.HeadersActivity" />
+        <Preference
+            android:key="rate"
+            android:title="Valorar"
+            android:icon="@drawable/ic_star_grey" />
+
+
+        <Preference
+            android:key="share"
+            android:title="Compartir"
+            android:icon="@drawable/ic_share"/>
+
+        <Preference
+            android:key="email"
+            android:title="Sugerencias"
+            android:icon="@drawable/ic_email_grey"/>
+
+        <Preference
+            android:key="info"
+            android:title="Version"
+            android:summary="Ayuda, Preguntas, Terminos de servicio..."
+            android:icon="@drawable/ic_info">
+
         </Preference>
-
-        <Preference
-            android:summary="asdasd"
-            android:title="Compartir" />
-        <Preference
-            android:summary="asdasd"
-            android:title="Sugerencias" />
-        <Preference
-            android:summary="asdasd"
-            android:title="Version" />
-        <Preference
-            android:summary="asdasd"
-            android:title="Colaboracion" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory>
+    <PreferenceCategory
+        android:title="Cuenta"
+        android:shouldDisableView="true">
 
-        android:title="Cuenta">
         <SwitchPreference
             android:defaultValue="true"
             android:key="example_switch"
             android:summary="asdasd"
             android:title="Sincronizar" />
+
         <Preference
             android:summary="asdasd"
             android:title="Salir" />
