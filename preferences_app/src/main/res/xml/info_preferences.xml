@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Ayuda">
+
+        <Preference
+            android:key="support"
+            android:title="Soporte" />
+
+        <Preference
+            android:title="Preguntame" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Legal"
+        android:shouldDisableView="true">
+
+
+        <Preference
+            android:title="Term of Service"/>
+
+        <Preference
+            android:title="Privacy Policy"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
